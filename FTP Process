@@ -1,0 +1,43 @@
+select 1 server, I router, I switch(2950-24), 2 PC
+
+connect server ->Router-> Switch->pc
+
+Go to router
+    fast Ethernet 0/0->on
+   IP Add 10.10.10.1,enter
+   fast Ethernet 0/1-> 'on' 
+   IP Add 192.168.0.1
+(Both ports will working after this)
+
+Go to pc 1
+    IP add ->192.168.0.2,   enter
+   Default gateway -> 192.168.0.1 ,(x)
+
+G0 to pc 2.
+   IP add->192.168.0.3, enter
+   Default Gateway-> 192.168.0.1,(x)
+
+Now, go to server
+  IP configuration
+  Ip add ->10.10.10.2, enter
+  Default gateway 10.10.10.1 ,(x)
+
+Go to services, select FTP
+
+write username & password:
+
+click write, Read, Rename, List, Add ,cross (x)
+
+Now in server, go to text editor.
+
+write Hello world
+
+save file as Hello.txt (x)
+
+Go to command prompt code ->ping 10.10.10.2, enter.
+         ftp 10.10.10.2, enter
+         username, enter
+         pass, enter
+         put hello.txt,enter
+
+dir
