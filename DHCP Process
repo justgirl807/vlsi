@@ -1,0 +1,31 @@
+Take Router
+
+Take: Switch.
+
+Take 2.PC
+
+connect Router to switch copper wire.
+
+connect switch to PC bijlee
+
+Go to server..
+
+Go to CLI
+
+Type No, enter 
+once again, enter.
+
+Write -> en ,enter
+Write ->conf t, enter
+Write ->int fa0/0,enter
+Write ->ip add 192.168.1. 255.255.255.0,enter
+Write ->No shutdown,enter
+Write ->exit,enter
+
+Write ->ip DHCP pool mypool,enter
+Write ->network 192.168.1.0 255.255.255.0,enter
+Write ->default-router 192.168.1.1,enter
+
+Go to pc 
+Go to desktop 
+Go to ip configuration and select dhcp
